@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Ginny Katz MPH Internship</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/gis-ph.png" type="image/x-icon">
+    <link rel="apple-touch-icon icon" sizes="192x192" href="assets/img/gis-ph.png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/webslides.css">
+    <link href="https://fonts.googleapis.com/css?family=Teko:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" type="text/css" href="css/storymap.2.3.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+          integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <!-- FAVICONS -->
+    <!--<link rel="shortcut icon" sizes="16x16" href="static/images/favicons/favicon.png">-->
+    <!--<link rel="shortcut icon" sizes="32x32" href="static/images/favicons/favicon-32.png">-->
+    <!--<link rel="apple-touch-icon icon" sizes="76x76" href="static/images/favicons/favicon-76.png">-->
+    <!--<link rel="apple-touch-icon icon" sizes="120x120" href="static/images/favicons/favicon-120.png">-->
+    <!--<link rel="apple-touch-icon icon" sizes="152x152" href="static/images/favicons/favicon-152.png">-->
+    <!--<link rel="apple-touch-icon icon" sizes="180x180" href="static/images/favicons/favicon-180.png">-->
+    <!--<link rel="apple-touch-icon icon" sizes="192x192" href="static/images/favicons/favicon-192.png">-->
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
+    <script src="https://cdn.bootcss.com/chroma-js/1.3.3/chroma.min.js"></script>
+    <script src="js/bouncemarker.js"></script>
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
+    <script src="js/storymap.2.3.js"></script>
+
+    <!-- Load d3.js -->
+    <script src="static/js/d3.v5.min.js"></script>
+
+    <!-- Load billboard.js -->
+    <link rel="stylesheet" type="text/css" href="static/css/billboard.min.css"/>
+    <script src="static/js/billboard.min.js"></script>
+
+
+    <script src="static/js/chroma.min.js"></script>
+    <script src="static/js/webslides.min.js"></script>
+
+
+</head>
+
+<body>
+
+<div id="storymap" class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6 col-md-4 storymap-story">
+
+
+            <!-- 1. Title Landing-->
+            <section data-scene="landing" data-background="assets/inern-intro.mp4">
+                <div class="fullscreen ">
+                    <div class="aligncenter">
+                        <h1 class="white-title">
+                            Emergency Management Communication: Building Community Resilience
+                        </h1>
+
+                        <h3 id="name" class="thanks">
+                            MPH Final Oral Exam
+                            <br>
+                            <a href="https://www.linkedin.com/in/virginiakatz"><img class="img-thumbnail avatar-56"
+                                                                                    src="assets/img/ginny.png"></a>
+                            Ginny Katz </h3>
+                        <h4 class="thanks"> Spring 2018</h4>
+
+                    </div>
+                </div>
+                <div class="credit" id="begin">
+                    <p><img style="width:180px; position:fixed; bottom:50px; left:50px;"
+                            src="assets/img/chpps-logo.png"></p>
+                    <br><br>
+                </div>
+            </section>
+
+            <!-- 2 Intro-->
+            <section data-scene="intro" class="container-fluid">
+                <h2 class="text-left">Welcome to Lincoln County, Intern. </h2>
+                <br>
+                <img src="assets/img/welcome.jpg" class="img-responsive " alt="Welcome to Lincoln County">
+                <br>
+                <p></p>
+
+                <p><strong title="Density">Density</strong>: 47/mi<sup>2</sup></p>
+                <p><strong title="Population">Population</strong>: 47,038 (2015)</p>
+
+                <br>
+                <h2 class=" text-left">Lincoln
+                    County Emergency Management </h2>
+                <p class=" alignleft"><strong>Preceptor</strong>: Jenny Demaris | LCSO Emergency Manager </p>
+
+                <p><img class=" container-fluid jen " src="assets/img/jen_demaris.jpg" alt="Jen Demaris"><img
+                        class="container-fluid jen " src="assets/img/sheriffs.svg" alt="LCSO Badge"></p>
+                <p>"How is your research and work directly impacting the end users?"</p>
+
+
+            </section>
+
+
+            <!--Scene 3 Scope-->
+            <!--Helping the audience understand LSCO scope of service serves and response protocol based on emergency parameters-->
+
+
+            <section data-scene="scope" data-background="assets/img/levels_new.png">
+                <div class="fullscreen text-center">
+                    <br>
+                    <h1 class="scope-title">Scope of Service and Response</h1>
+                    <h2 class="scope-title">Lincoln County Emergency Management: the local response with a big
+                        responsibility. </h2>
+                </div>
+            </section>
+
+            <!--<section data-scene="scope"  class="background">-->
+            <!--<div class="fullscreen content-right text-right">-->
+            <!--<div class=" content-right aligncenter">-->
+            <!--<h1 class="aligncenter">Scope of Service and Response</h1>-->
+            <!--<br>-->
+            <!--<h2 class="aligncenter">Lincoln County Emergency Management: the local response with a big-->
+            <!--responsibility. </h2>-->
+            <!--&lt;!&ndash;<div>&ndash;&gt;-->
+            <!--&lt;!&ndash;<ul class="flexblock blink">&ndash;&gt;-->
+            <!--&lt;!&ndash;<li class="button-1 bg-trans-light">&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class="process step-1"></div>&ndash;&gt;-->
+            <!--&lt;!&ndash;<h2 class="content-center "><strong>Individual, Household, Business</strong></h2>&ndash;&gt;-->
+            <!--&lt;!&ndash;<br>&ndash;&gt;-->
+            <!--&lt;!&ndash;<small class="aligncenter"><img src="assets/img/sheriffs.svg"><img&ndash;&gt;-->
+            <!--&lt;!&ndash;src="assets/img/depoe-fire-logo.png"></small>&ndash;&gt;-->
+
+            <!--&lt;!&ndash;</li>&ndash;&gt;-->
+            <!--&lt;!&ndash;<li class="button-2 bg-trans-light">&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class="process step-1"></div>&ndash;&gt;-->
+            <!--&lt;!&ndash;<h2 class="content-center">Jurisdiction</h2>&ndash;&gt;-->
+            <!--&lt;!&ndash;<small class="aligncenter"><img src="assets/img/lsco-logo.png"><img&ndash;&gt;-->
+            <!--&lt;!&ndash;src="assets/img/cert-logo.png"></small>&ndash;&gt;-->
+
+            <!--&lt;!&ndash;</li>&ndash;&gt;-->
+            <!--&lt;!&ndash;<li class="button-3 bg-trans-light">&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class="process step-1"></div>&ndash;&gt;-->
+            <!--&lt;!&ndash;<h2 class="content-center">State/Regional/Tribunal</h2>&ndash;&gt;-->
+            <!--&lt;!&ndash;<br>&ndash;&gt;-->
+            <!--&lt;!&ndash;<small class="aligncenter"><img src="assets/img/oem-logo.png"> <img&ndash;&gt;-->
+            <!--&lt;!&ndash;src="assets/img/coast-guard-logo.png"></small>&ndash;&gt;-->
+            <!--&lt;!&ndash;</li>&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<li class="button-5 bg-trans-light ">&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class="process step-5"></div>&ndash;&gt;-->
+            <!--&lt;!&ndash;<h2 class="content-center">Federal Interagency Operations</h2>&ndash;&gt;-->
+            <!--&lt;!&ndash;<br>&ndash;&gt;-->
+            <!--&lt;!&ndash;<small class="aligncenter"><img src="assets/img/fema-logo.png">&ndash;&gt;-->
+            <!--&lt;!&ndash;<img src="assets/img/army-logo.png">&ndash;&gt;-->
+            <!--&lt;!&ndash;<img src="assets/img/navy-logo.png"></small>&ndash;&gt;-->
+            <!--&lt;!&ndash;</li>&ndash;&gt;-->
+            <!--&lt;!&ndash;<li class="button-6 bg-trans-light">&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class="process step-6"></div>&ndash;&gt;-->
+            <!--&lt;!&ndash;<h2 class="content-center">National and International</h2>&ndash;&gt;-->
+            <!--&lt;!&ndash;<br>&ndash;&gt;-->
+            <!--&lt;!&ndash;<small class="aligncenter"><img src="assets/img/fema-logo.png"> <img&ndash;&gt;-->
+            <!--&lt;!&ndash;src="assets/img/un-logo.png"></small>&ndash;&gt;-->
+            <!--&lt;!&ndash;</li>&ndash;&gt;-->
+            <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+
+            <!--</div>-->
+
+            <!--</section>-->
+
+            <!---prep
+            Lincoln County hazards range from natural, manmade, technological and health related.
+<li>Active Shooter</li.
+Bioterrorism
+Chemical Emergencies
+Cyber Security
+Drought
+Earthquakes
+Explosions
+Extreme Heat
+Flooding and River Levels
+Hazardous Materials Incidents
+Home Fires
+Household Chemical Emergencies
+Landslides & Debris Flow
+Nuclear Blast
+Pandemic
+Power Outages
+Radiological Dispersion Device
+Severe Weather
+Snowstorms & Extreme Cold
+Space Weather
+Thunderstorms & Lightning
+Tornadoes
+Tsunamis
+Volcanoes
+Wildfires
+
+-->
+            <section data-scene="prep">
+                <br>
+                <h1 class="text-center"><img class="flexblock align center" src="assets/img/lsco-logo.png">
+                    Preparedness Priorities</h1>
+                <br>
+                <h4>Lincoln County's Natural, Manmade, Technological, and Health Related Hazards</h4>
+                <p><i>Preparedness information linked for each hazard, sourced from <a
+                        href="http://www.co.lincoln.or.us/emergencymanagement/page/hazards-natural-technological-andor-adversarial-or-human-caused">Lincoln
+                    County Emergency Management</a> and <a href="https://www.ready.gov/">Ready.gov</a></i></p>
+
+                <div>
+                    <ul class="feature-list ">
+                        <li><a href="https://www.ready.gov/active-shooter">Active Shooter</a></li>
+                        <li><a href="https://www.ready.gov/Bioterrorism">Bioterrorism</a></li>
+                        <li><a href="https://www.ready.gov/chemical">Chemical Emergencies</a></li>
+                        <li><a href="https://www.ready.gov/cybersecurity">Cyber Security</a></li>
+                        <li><a href="https://www.ready.gov/drought">Drought</a></li>
+                        <li><a href="http://www.co.lincoln.or.us/emergencymanagement/page/hazards-earthquake">Earthquakes</a></li>
+                        <li><a href="https://www.ready.gov/explosions">Explosions</a></li>
+                        <li><a href="https://www.ready.gov/heat">Extreme Heat</a></li>
+                        <li><a href="http://www.co.lincoln.or.us/emergencymanagement/page/hazards-flooding-and-river-levels">Flooding and River Levels</a></li>
+                        <li><a href="https://www.ready.gov/hazardous-materials-incidents">Hazardous Materials
+                            Incidents</a></li>
+                        <li><a href="https://www.ready.gov/home-fires">Home Fires</a></li>
+                        <li><a href="https://www.ready.gov/household-chemical-emergencies">Household Chemical
+                            Emergencies</a></li>
+                        <li><a href="http://www.co.lincoln.or.us/emergencymanagement/page/hazards-landslides">Landslides &amp; Debris Flow</a></li>
+                        <li><a href="https://www.ready.gov/nuclear-explosion">Nuclear Blast</a></li>
+                        <li><a href="https://www.ready.gov/pandemic">Pandemic</a></li>
+                        <li><a href="https://www.ready.gov/power-outages">Power Outages</a></li>
+                        <li><a href="https://www.ready.gov/radiological-dispersion-device">Radiological Dispersion
+                            Device</a></li>
+                        <li><a href="http://www.co.lincoln.or.us/emergencymanagement/page/hazards-severe-weather">Severe
+                            Weather</a></li>
+                        <li><a href="https://www.ready.gov/winter-weather">Snowstorms &amp; Extreme Cold</a></li>
+                        <li><a href="https://www.ready.gov/space-weather">Space Weather</a></li>
+                        <li><a href="https://www.ready.gov/thunderstorms-lightning">Thunderstorms &amp; Lightning</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <br>
+                <hr>
+                <h2>Cascadia Hazard Mapping</h2>
+                <h4>The local tsunami zone (right) <br>
+
+
+                    Cascadia Earthquake and Tsunami Potential (below) </h4>
+
+
+                <img class="img-thumbnail" src="assets/img/csz.jpg"><a
+                    href=" https://thebridge.agu.org/2014/06/02/challenges-seismic-mitigation-oregon-science-policy-meet/">image
+                source:Oregon Resilience Plan , 2013</a>
+
+
+            </section>
+
+            <!-- Scene 4 events-->
+            <section data-scene="events">
+                <div class="wrap">
+                    <h2>"The Biggest, Little EOC"</h2>
+                    <br>
+                    <h4>While the day-to-day duties were based in the Emergency Operations Center (EOC), engaging the
+                        community and training opprotunities often requires on-location events. </h4>
+
+                    <video controls autoplay loop class="embeded-photo img-responsive img-thumbnail">
+                        <source src="assets/enter-eoc2.mp4">
+                    </video>
+                    <br>
+<hr>
+                    <h6>This map describes the different locations of events that happened during my internship. Click
+                        the marker to see different events. </h6>
+<hr>
+                    <h2>Duties and Events</h2>
+                    <h5>1. Critical Infrastructure GIS data Update using Real-Time Assessment and Planning Tool for
+                        Oregon RAPTOR</h5>
+                    <small><a
+                            href="https://geo.maps.arcgis.com/apps/PublicInformation/index.html?appid=f8a0d8814a67445a9e6bf3485f4fd24f">
+                        <img class="img-thumbnail img-responsive" src="assets/img/raptor.png"></a></small>
+                    <h5>2. Assist Emergency Manager in Community Outreach and event set up</h5>
+                    <small><img class="img-thumbnail img-responsive" src="assets/img/scope/help.jpg"></small>
+                    <h5>3. Social Media Support</h5>
+                    <small><img class="img-thumbnail img-responsive" src="assets/img/lcso-sm-post.jpg"></small>
+
+
+                </div>
+
+            </section>
+
+            <!--<h4>4. Additional Trainings as desired</h4>-->
+            <!--<p>-->
+            <!--<img Style="transform: rotate(90deg)" class="  img-thumbnail img-responsive" src="assets/img/casualty.jpg"> </p>-->
+            <!-- Applicable Courses -->
+
+
+            <section data-scene="courses" data-background="assets/img/class.jpg">
+                <div style="position:fixed;bottom: 100px " class="fullscreen">
+                    <div class="bg-trans-light">
+                        <h1 class="thanks ">Applicable OSU Courses</h1>
+
+                        <ul class="thanks">
+                            <li><h3><strong>Geog 595 </strong> Field Geography of Oregon, Dr. Aaron Wolf: My first
+                                exposure to Oregon's beautifully dangerous topography</h3></li>
+                            <br>
+                            <br>
+                            <li><h3><strong>H 547</strong> GIS and Public Health, Dr. Perry Hystad: Learning to create
+                                health communication assets with data and maps.</h3></li>
+                            <br>
+                            <li><h3><strong>H 589</strong> Emergency and Disaster Management, Anthony Veltri, Ed.D,
+                                CSHM: Understanding the private entity perspective in Emergency Management</h3></li>
+                            <br>
+                            <li><h3><strong>PAC 325</strong> ALI Wilderness First Aid </h3></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Scene 4 Core Competencies-->
+            <section data-scene="core">
+                <div class="wrap">
+                <br>
+                <h2 class="text-center">Meeting Core Competencies</h2>
+                <br>
+                    <h6>
+                <ol>
+                    <li><strong>Design and manage health development programs considering health, social, political,
+                        cultural, and environmental factors.</strong>
+                        <br> <i>I was involved in the update of LSCO and OHA’s critical infrastructure GIS Data update, which
+                            requires a strong understanding and critical thinking regarding the multiple health,
+                            political, geographical, cultural and environmental components.
+                        </i>
+                    </li>
+                    <li><strong>Work in, and adapt to, any global context for health development.</strong>
+                        <br><i>While this is a local opportunity, the opportunity is unlike anywhere in the world.
+                            Oregon boasts some of the most current and finest disaster management professionals and
+                            research in the world.
+                            Earthquakes happen everyday globally and disaster management is a skill set that teaches
+                            planning and flexibility and adaptation that can be applied to most global settings.
+                        </i>
+                    </li>
+                    <li><strong>Integrate global, political, economic, and cultural systems knowledge into health
+                        development.</strong><br>
+                        <i>The Cascadia event this project is focused on has ramifications for areas outside of Oregon
+                            across the Pacific Ocean that require a global context.
+                            Emergency Management has many financial considerations and is vulnerable to the caprices of
+                            the current political systems.
+                        </i>
+                    </li>
+                    <li><strong>Develop a disciplinary subspecialty to be applied to international health.</strong><br>
+                        <i> My unique discipline is the combination of media creation in disaster management
+                            communication within the subspecialty of emergency management. </i>
+                    </li>
+                    <li><strong>Identify culturally sensitive and socio-economically appropriate strategies in health
+                        development.</strong><br>
+                        <i>Emergency management communication directly impacts all humans in the affected area. Learning the current approaches to encompassing the diverse population was insightful to some of the core concerns of emergency Management communication.
+                        </i></li>
+                    <li><strong>Design and manage health development programs in accordance to universally and locally
+                        acceptable ethical standard.</strong><br>
+                        GIS, Media, and Geovisualization are new platforms that have just begun to be implemented in
+                        emergency management.
+
+                    </li>
+                </ol></h6>
+                <br>
+                <h3 class="text-center">Extra Skills Obtained</h3>
+                    <p><img src="assets/img/first-response-cert.png "></p> <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <p> <small><img class="img-responsive img-thumbnail" style="position:relative;top:60px;transform:rotate(90deg)" src="assets/img/casualty.jpg"></small></p>
+
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <p><img src="assets/img/ics-cert.png "></p>
+
+
+                </div>
+            </section>
+
+            <!-- Scene 5 Challenges-->
+            <section data-scene="challenges">
+                <br>
+                <h1 class="text-center">Challenges</h1>
+                <br>
+                <h6>
+                <ul>
+                    <h2>Internship Challenges</h2>
+                    <li><strong>GIS Data- means different things to different entities</strong>
+                        <br> <i>The update of the OHA’s Critical Infrastructure needed more time, bandwidth, and GIS
+                            effort than one internship could provide.
+                        </i>
+                    </li>
+                    <li><strong>Fragmentation of Emergency System</strong>
+                        <br><i>So many entities, who's in charge here? While Lincoln County has strong relationships
+                            with partners in response, many counties and other jurisdictions have friction or lack of
+                            cohesiveness that can complicate response communication effort.
+                        </i>
+                    </li>
+                    <li><strong>Stigma and divide of academia and experience</strong><br>
+                        <i>The value of experience verses the value of education.
+                        </i></li>
+                        <h2> Structural Challenges</h2>
+
+                    <li><strong>Lack of historical emphasis on infrastructure</strong><br>
+                        <i> Lack of prepared infrastructure means additional concern for the emergency manager and is a
+                            critical consideration for the PNW. </i>
+                    </li>
+                    <li><strong>Messaging is always top down and lacks empathy</strong><br>
+                        <i>Emergency Management needs an update in communication approach to encompass a more diverse
+                            and mobile population.
+                        </i></li>
+
+
+                </ul></h6>
+            </section>
+
+            <!-- Scene Next-->
+            <section data-scene="next" data-background="assets/img/drill-sign.jpg" class="dark">
+                <div class="fullscreen  thanks  content-center">
+                    <h1 class="thanks">Being research Fall 2018 with Oregon State University- PhD in Humanistic Geography </h1>
+                    <br>
+<div class="bg-trans-light">
+                        <h2 class="text-center">How can we create a better, more empathetic approach to emergency
+                            communication?</h2>
+                        <br>
+                        <h3>A few research goals</h3>
+                        <h4>Designing and Incorporating better technology</h4>
+                        <h4>Updating approaches to create more public action in prepareness mesures</h4>
+                        <h4>Bridging the rift between academia and emergency management</h4>
+                        <h4>Creating a more resilient public, from the bottom up. </h4>
+                    </div>
+                    <br>
+                    <br><br>
+                </div>
+            </section>
+
+
+            <!-- End -->
+            <section data-scene="end" data-background="assets/img/scope/sheriff-truck.jpg">
+                <div class="fullscreen text-center aligncenter">
+                    <br>
+                    <h1 class="thanks " style="position: relative; top: 140px;">Thank you</h1>
+                    <h1 class="thanks" style="position: relative; top: 160px;">Questions?</h1>
+                </div>
+            </section>
+
+        </div>
+        <!--map div-->
+        <div class="col-sm-6 col-md-8 storymap-map"></div>
+    </div>
+
+    <dl>
+        <dt>
+            <!--facebook icon-->
+            <a class="fab fa-facebook-square btn"
+               href="https://www.facebook.com/sharer/sharer.php?u=https%3A//ginnykatz.github.io/internship"
+               style="top:5px;left:0"
+               target="_blank"></a>
+        </dt>
+        <dt>
+            <!--twitter icon-->
+            <a class="fab fa-twitter-square btn"
+               href="https://twitter.com/home?status=https%3A//ginnykatz.github.io/internship"
+               style="top:30px;left:0"
+               target="_blank"></a>
+        </dt>
+        <dt>
+            <!--github icon-->
+            <a class="fab fa-git-square btn" href="https://github.com/ginnykatz/internship" style="top:55px;left:0"
+               target="_blank"></a>
+        </dt>
+        <dt>
+            <!--info icon-->
+            <i class="fas fa-file-alt btn" style="top:80px;left:0" data-toggle="modal" data-target="#info-modal"></i>
+        </dt>
+    </dl>
+
+    <!--the info page-->
+    <div class="modal fade" id="info-modal" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h2 class="modal-title" style="position: absolute; left: 43%; top: 8px;">About</h2>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <h4>This story map is a presentation tool to help tell the story of Ginny Katz's MPH graduate
+                        internship with Lincoln County Emergency Management. </h4>
+                    <h5>Completed: April 2017- August 2017</h5>
+                    <br>
+                    <h5>References:</h5>
+                    <ol>
+                        <li>
+                            Cascadia Damage Potential (2013) Map <a
+                                href="https://www.oregon.gov/oem/Documents/Oregon_Resilience_Plan_Final.pdf"
+                                target="_blank">Oregon
+                            Resileince Plan</a>
+                        </li>
+                        <li>
+                            <a href="http://www.co.lincoln.or.us/sheriff" target="_blank">Lincoln County Sherriff's
+                                Office</a>
+                        </li>
+                        <li>
+                            <a href="https://www.oregon.gov/gov/policy/orr/Pages/cascadia.aspx" target="_blank">Cascadia Preparedness</a>
+                        </li>
+                        <li>
+                            <a href="https://www.oregon.gov/OEM/Pages/default.aspx" target="_blank">Oregon Emergency
+                                Management</a>
+                        </li>
+
+                        <li>
+                            <p>
+                                <a href="https://www.oregon.gov/oem/Documents/Oregon_Resilience_Plan_Final.pdf"
+                                   target="_blank">Oregon Resilience Plan</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="https://www.facebook.com/oregonhazmat/"
+                                   target="_blank">Oregon Hazmat</a>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <a href="http://www.depoebayfire.com/content/Training/"
+                                   target="_blank">Depoe Bay Fire</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="https://upload.wikimedia.org/wikipedia/commons/0/09/Seal_of_the_United_States_Department_of_the_Navy.svg"
+                                   target="_blank">Navy Logo</a>
+                            </p>
+                        </li>
+
+
+
+
+                        <!-- hazmat logo fb https://www.facebook.com/oregonhazmat/-->
+                        <!--cert logo http://www.depoebayfire.com/content/Training/ -->
+                        <!-- depoe bay https://twitter.com/depoebayfire-->
+                        <!--Navy logo https://upload.wikimedia.org/wikipedia/commons/0/09/Seal_of_the_United_States_Department_of_the_Navy.svg-->
+
+
+
+                    </ol>
+                    <h5>Attributions:</h5>
+                    <p><a href="https://github.com/jakobzhao/storymap/">storymap.js</a> | Released Date: 02/20/2017/
+                        Version: 2.3 | MIT License<br>
+                    <p>This story map uses the <a href="https://tinyurl.com/ybz7hzvd" target="_blank">Intern style</a>
+                        base map built with <a href="https://www.mapbox.com/">Mapbox</a>.<br>
+                    Photos and videos by: Ginny Katz</p>
+
+                    <h5><b>About the Author: Ginny Katz</b></h5>
+                    <p> Ginny is a Master of Public Health Global Health Student with Oregon State University. She is a multi-media artist and humanistic geographer interested in making her fellow humans more resilient to the emergencies they may face.
+                    <p><a href="https://health.oregonstate.edu/degrees/graduate/public-health/global-health">College of
+                        Public Health and Human Sciences</a> | <a href="https://www.oregonstate.edu/">Oregon State
+                        University</a></p>
+
+                    <h5>Acknowledgements</h5>
+                    Jenny Demaris and the LCSO team<br>
+                    Faculty and Professors at Oregon State University<br>
+                    Dr. Stephanie Grutzmacher, academic adviser and graduate committee<br>
+                    Dr. Jonathan Garcia, graduate committee<br>
+                    Dr. Khanna, graduate committee</p>
+
+                    <br>
+                    <i>Special Thank You:</i>
+                    <br>
+                    Brian Katz
+                    <br>
+                    Rex & Laurie Incledon
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Main JavaScript -->
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>
+
+<!--CSZ damage potential ref: https://thebridge.agu.org/2014/06/02/challenges-seismic-mitigation-oregon-science-policy-meet/-->
+<!-- hazmat logo fb https://www.facebook.com/oregonhazmat/-->
+<!--cert logo http://www.depoebayfire.com/content/Training/ -->
+<!-- depoe bay https://twitter.com/depoebayfire-->
+<!--Navy logo https://upload.wikimedia.org/wikipedia/commons/0/09/Seal_of_the_United_States_Department_of_the_Navy.svg-->

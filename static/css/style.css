@@ -1,0 +1,171 @@
+#mymap {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+
+#mymap2 {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#mymap3 {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#mymap4 {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    min-width: 60%;
+    min-height: 100%;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background: rgba(102, 102, 102, 0);
+}
+
+
+#date-chart {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.pos-term {
+
+    color: aqua;
+    /*font-weight: bold;*/
+}
+.date {
+
+    color: whitesmoke;
+    font-size: 20px;
+}
+.dark-text {
+    color: #1c1c1c;
+    font-size: 40px;
+}
+.light-text{
+    color:white;
+    font-size:30px;
+    text-align:center;
+}
+#worduniverse {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: "Roboto", "San Francisco";
+}
+
+#worduniverse2 {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: "Roboto", "San Francisco";
+}
+
+#network {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: "Roboto", "San Francisco";
+}
+
+
+.flashit{
+    -webkit-animation: flash linear 1s infinite;
+    animation: flash linear 1s infinite;
+}
+@-webkit-keyframes flash {
+    0% { opacity: 1; }
+    50% { opacity: .1; }
+    100% { opacity: 1; }
+}
+@keyframes flash {
+    0% { opacity: 1; }
+    50% { opacity: .1; }
+    100% { opacity: 1; }
+}
+
+
+
+.logo {
+    text-transform: lowercase; }
+
+.logo a {
+    background: url("../img/new-logo.png") no-repeat 0 0;
+    background-size: 7.2rem;
+    float: left;
+    height: 7.2rem;
+    /*text-indent: -4000px;*/
+    /*If you remove text-indent and add: */
+    /*padding-left: 6rem;*/
+    vertical-align: middle;
+    width: 7.2rem }
+
+header {
+    height: 8rem;
+    padding-top: 2rem;
+    background-color: rgba(35, 35, 35, 0.38)!important;
+}
+
+
+nav[role='navigation'] li a {
+    background-color: rgba(50, 50, 50, 0);
+    color: #fff;
+}
+
+
+nav[role='navigation'] li a:hover {
+    background-color: rgba(50, 50, 50, 0);
+}
+
+.img-thumbnail {
+    padding: 0.25rem;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    max-width: 100%;
+    height: auto;
+}

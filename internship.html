@@ -1,0 +1,700 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
+
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/webslides/webslides
+
+      Thanks!
+    -->
+
+    <!-- SEO -->
+    <title>WebSlides Demo: Longform Interviews</title>
+    <meta name="description" content="Ginny Katz MPH Final Oral Exam.">
+
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="static/css/svg-icons.css">
+
+    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+
+    <!-- FACEBOOK -->
+    <meta property="og:url" content="https://www.facebook.com/ItsGinnyKatz">
+
+    <!-- EDIT -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Ginny Katz MPH Final Oral Exam presentation" />
+
+    <!-- EDIT -->
+    <meta property="og:description" content="Ginny Katz MPH Final Oral Exam presentation">
+
+    <!-- EDIT -->
+    <meta property="og:updated_time" content="2017-03-28T12:17:24">
+
+    <!-- EDIT -->
+    <meta property="og:image" content="../static/images/share-webslides.jpg" >
+
+    <!-- EDIT -->
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="429">
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@ShadyKatzLady">
+
+    <!-- EDIT -->
+    <meta name="twitter:creator" content="@ShadyKatzLady">
+
+    <!-- EDIT -->
+    <meta name="twitter:title" content="Ginny Katz MPH Final Oral Exam">
+
+    <!-- EDIT -->
+    <meta name="twitter:description" content="Community Resilience through Community Engagement">
+
+    <!-- EDIT -->
+    <meta name="twitter:image" content="../static/images/share-webslides.jpg">
+
+    <!-- EDIT -->
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="static/images/favicons/favicon.png">
+    <link rel="shortcut icon" sizes="32x32" href="static/images/favicons/favicon-32.png">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="static/images/favicons/favicon-76.png">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="static/images/favicons/favicon-120.png">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="static/images/favicons/favicon-152.png">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="static/images/favicons/favicon-180.png">
+    <link rel="apple-touch-icon icon" sizes="192x192" href="static/images/favicons/favicon-192.png">
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+    <script src="static/js/leaflet.js"></script>
+    <script src="static/js/proj4.js"></script>
+    <script src="static/js/proj4leaflet.min.js"></script>
+
+    <script src="static/js/leaflet.ajax.min.js"></script>
+
+    <script src="static/js/mapbox-gl.js"></script>
+
+    <script src="static/js/leaflet-mapbox-gl.js"></script>
+
+
+    <script src="static/js/jquery.min.js"></script>
+
+
+    <!-- Load d3.js -->
+    <script src="static/js/d3.v5.min.js"></script>
+
+    <!-- Load billboard.js -->
+    <link rel="stylesheet" type="text/css" href="static/css/billboard.min.css"/>
+    <script src="static/js/billboard.min.js"></script>
+
+
+    <script src="static/js/chroma.min.js"></script>
+    <script src="static/js/webslides.min.js"></script>
+    <script src="static/js/Leaflet.SwoopyArrow-customized.js"></script>
+    <script src="assets/data/kits.js"></script>
+    <script src="assets/data/media.js"></script>
+
+
+  </head>
+  <body>
+    <header role="banner">
+      <nav role="navigation">
+        <p class="logo"><a href="../index.html" title="WebSlides">WebSlides</a></p>
+        <ul>
+          <li class="github">
+            <a rel="external" href="https://github.com/webslides/webslides" title="Github">
+              <svg class="fa-github">
+                <use xlink:href="#fa-github"></use>
+              </svg>
+              <em>WebSlides</em>
+            </a>
+          </li>
+          <li class="twitter">
+            <a rel="external" href="https://twitter.com/webslides" title="Twitter">
+              <svg class="fa-twitter">
+                <use xlink:href="#fa-twitter"></use>
+              </svg>
+              <em>@WebSlides</em>
+            </a>
+          </li>
+          <!--  <li class="dribbble"><a rel="external" href="http://dribbble.com/webslides" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>webslides</em></a></li> -->
+        </ul>
+      </nav>
+    </header>
+
+    <main role="main">
+      <article>
+
+        <section class="fullscreen bg-trans-dark">
+          <!-- Overlay/Opacity: [class*="bg-"] > .background.dark or .light -->
+      <video class="background bg-trans-dark" autoplay loop muted src="assets/intern_landing.mp4" >
+
+      </video>
+          <!--.wrap = container width: 90% -->
+          <div class="wrap">
+            <h1>
+              Building<br>  <strong>Community Resilience </strong><br> through<br><strong>Communication</strong>
+            </h1>
+            <p class="text-subtitle">MPH Global Health <a href="https://health.oregonstate.edu/degrees/graduate/public-health/global-health">Oregon State University </a>
+            <br>Final Oral Examination </p>
+            <p><img class="avatar-40" src="assets/img/ginny-avatar.jpg" alt="Ginny Katz"> By Ginny Katz. June 12, 2018 </p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <div class="wrap">
+            <div class="card-50 bg-white">
+              <figure>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d560602.5694581039!2d-123.76723423566446!3d44.619741730877436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54c02b5c6a6ced97%3A0xa5cc4ae1154020f6!2sLincoln+County%2C+OR!5e0!3m2!1sen!2sus!4v1528063749909"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <figcaption>
+                  <a href="https://maps.google.com" title="Google Maps">
+                    <svg class="fa-map">
+                      <use xlink:href="#fa-map"></use>
+                    </svg>
+                    Google Maps
+                  </a>
+                </figcaption>
+              </figure>
+              <!-- end figure-->
+              <div class="flex-content">
+                <h3>
+                  Internship: Lincoln County Emergency Management
+                </h3>
+
+                <br>
+                  <h5>Location: Lincoln County, OR</h5>
+
+                <p>"Ground Zero of Cascadia"</p>
+                <ul class="description">
+                  <li>
+                    <strong class="text-label" title="Density">Density:</strong> 47/mi<sup>2</sup>
+                  </li>
+                  <li><strong class="text-label" title="Population">Population:</strong> 47,038 (2015)</li>
+                  <li><strong class="text-label" title="Website">Website:</strong> <a
+                          href="http://www.co.lincoln.or.us/emergencymanagement">www.co.lincoln.or.us/emergencymanagement</a>
+                  </li>
+                </ul>
+                <p>
+
+                </p>
+
+              </div>
+              <!-- end .flex-content-->
+            </div>
+            <!-- end .card-50-->
+          </div>
+          <!-- .end .wrap -->
+
+        </section>
+
+<!--Contextual scale of Emergency management-->
+
+        <!--Context of Scale-->
+        <section class="bg-gradient-gray">
+          <div class="wrap">
+            <h2>Scale of Emergency Management</h2>
+            <p>
+             Giving context to scope of service
+            </p>
+            <hr>
+            <ul class="flexblock blink">
+              <li>
+                <a href="#" title="Block Link = .blink">
+                  <div>
+                    <img src="assets/img/lsco-logo.png" alt="Lincoln County Emergency Management">
+                    <p><strong>County Level</strong>The local response</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#  " title="Block Link = .blink">
+                  <div>
+                    <img src="assets/img/oem-logo.png" alt="Oregon Emergency Management">
+                    <p><strong>State Level</strong> Raptor GIS</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" title="Block Link = .blink">
+                  <div>
+                    <img src="assets/img/cg-logo.png" alt="Coast Guard">
+                    <p><strong>The Coast Guard</strong>Additional Support</p>
+                  </div>
+                </a>
+              </li>
+              <li >
+                <a href="" title="Block Link = .blink">
+                  <div>
+                    <img src="assets/img/2000px-FEMA_logo.svg.png" alt="Federal Emergency Management Agency ">
+                    <p><code>Federal Level</code>Grand scale response</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+<section class="bg-gradient-gray">
+        <div class="block-content">
+
+          <div id="node-4987" class="node node-page clearfix" about="/emergencymanagement/page/hazards-natural-technological-andor-adversarial-or-human-caused" typeof="sioc:Item foaf:Document">
+
+            <span property="dc:title" content="Hazards (Natural, Technological and/or Adversarial or Human-Caused)" class="rdf-meta element-hidden"></span>
+
+
+
+            <div class="content-center">
+
+                <p>Lincoln County hazards range from natural, manmade, technological and health related.</p>
+              <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p><small>Click links to learn what to do before, during and after each type of emergency.</small></p>
+                <ul class="rteindent1"><li><a href="https://www.ready.gov/active-shooter" target="_blank"> Active Shooter</span></a></li>
+                  <li><a href="https://www.ready.gov/Bioterrorism" target="_blank">Bioterrorism</a></li>
+                  <li><a href="https://www.ready.gov/chemical" target="_blank">Chemical Emergencies</a></li>
+                  <li><a href="https://www.ready.gov/cybersecurity" target="_blank">Cyber Security</a></li>
+                  <li><a href="https://www.ready.gov/drought" target="_blank">Drought</a></li>
+                  <li><a href="http://www.co.lincoln.or.us/emergencymanagement/page/hazards-earthquake">Earthquakes</a></li>
+                  <li><a href="https://www.ready.gov/explosions" target="_blank">Explosions</a></li>
+                  <li><a href="https://www.ready.gov/heat" target="_blank">Extreme Heat</a></li>
+                  <li><a href="http://www.co.lincoln.or.us/emergencymanagement/page/hazards-flooding-and-river-levels">Flooding and River Levels</a></li>
+                  <li><a href="https://www.ready.gov/hazardous-materials-incidents" target="_blank">Hazardous Materials Incidents</a></li>
+                  <li><a href="https://www.ready.gov/home-fires" target="_blank">Home Fires</a></li>
+                  <li><a href="https://www.ready.gov/household-chemical-emergencies" target="_blank">Household Chemical Emergencies</a></li>
+                  <li><a href="http://www.co.lincoln.or.us/emergencymanagement/page/hazards-landslides">Landslides &amp; Debris Flow</a></li>
+                  <li><a href="https://www.ready.gov/nuclear-explosion" target="_blank">Nuclear Blast</a></li>
+                  <li><a href="https://www.ready.gov/pandemic" target="_blank">Pandemic</a></li>
+                  <li><a href="https://www.ready.gov/power-outages" target="_blank">Power Outages</a></li>
+                  <li><a href="https://www.ready.gov/radiological-dispersion-device" target="_blank">Radiological Dispersion Device</a></li>
+                  <li><a href="http://www.co.lincoln.or.us/emergencymanagement/page/hazards-severe-weather">Severe Weather</a></li>
+                  <li><a href="https://www.ready.gov/winter-weather" target="_blank">Snowstorms &amp; Extreme Cold</a></li>
+                  <li><a href="https://www.ready.gov/space-weather" target="_blank">Space Weather</a></li>
+                  <li><a href="https://www.ready.gov/thunderstorms-lightning" target="_blank">Thunderstorms &amp; Lightning</a></li>
+                  <li><a href="https://www.ready.gov/tornadoes" target="_blank">Tornadoes</a></li>
+                  <li><a href="http://www.co.lincoln.or.us/emergencymanagement/page/hazards-tsunamis">Tsunamis</a></li>
+                  <li><a href="https://www.ready.gov/volcanoes" target="_blank">Volcanoes</a></li>
+                  <li><a href="http://www.co.lincoln.or.us/emergencymanagement/page/hazards-wildland-fire">Wildfires</a></li>
+                </ul></div></div></div><div style="clear:both;"></div>
+
+
+
+
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+        <!--DUTIES AND GOALS ***Maybe make video for this-->
+        <section>
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <h2>Internship Duties and Goals</h2>
+                <ul class="flexblock specs">
+                  <li>
+                    <div>
+                      <svg class="fa-wifi">
+                        <use xlink:href="#fa-map-marker"></use>
+                      </svg>
+                      <h2>Critical Infrastructure GIS</h2>
+                      Update 10 year old data on Raptor
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <svg class="fa-battery-full">
+                        <use xlink:href="#fa-users"></use>
+                      </svg>
+                      <h2>Engage Community</h2>
+                      Assist Emergency Manager in outreach and drills
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <svg class="fa-twitter">
+                        <use xlink:href="#fa-twitter"></use>
+                      </svg>
+                      <h2>Social Media Support</h2>
+                      Hey, you know how to work a Twitter, right?
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- end .column-->
+              <div class="column" data-autoplay data-loop>
+
+                <figure>
+                  <img class="aligncenter" src="static/images/raptor.PNG" alt="Raptor">
+                </figure>
+              </div>
+              <!-- end .column-->
+            </div>
+            <!-- end .grid-->
+          </div>
+          <!-- end .wrap-->
+        </section>
+
+        <!--Map of cool things I did-->
+        <section class="bg-apple slide-top">
+          <div id="map"></div>
+          <!--To add a title tp the images-->
+          <!--<div class="wrap fadeInUp bg-trans-light aligncenter size-30">-->
+          <!--<h2>Where we are</h2>-->
+          <!--</div>-->
+        </section>
+        <!--SKILLS TAKE AWAY-->
+        <section>
+          <div class="wrap">
+            <h2>Transparent Logos</h2>
+            <p>
+              Change the color of a .svg/.png image using CSS. Images are property of their respective owners.
+            </p>
+            <hr>
+            <ul class="flexblock blink">
+              <li>
+                <a href="#" title="Block Link = .blink">
+                  <div>
+                    <img src="static/images/logos/google.svg" alt="Google">
+                    <p><strong>Height recommended</strong>: 48px</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" title="Block Link = .blink">
+                  <div>
+                    <img class="blacklogo" src="static/images/logos/airbnb.svg" alt="Airbnb">
+                    <p><code>img.blacklogo</code></p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" title="Block Link = .blink">
+                  <div>
+                    <img class="graylogo" src="static/images/logos/microsoft.svg" alt="Microsoft">
+                    <p><code>img.graylogo</code></p>
+                  </div>
+                </a>
+              </li>
+              <li class="bg-blue">
+                <a href="" title="Block Link = .blink">
+                  <div>
+                    <img class="whitelogo" src="static/images/logos/netflix.svg" alt="Netflix">
+                    <p><code>img.whitelogo</code></p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <!--CORE COMPENTENCIES-->
+        <section class="bg-green">
+          <div class="wrap">
+            <h3>ul.flexblock.metrics.border</h3>
+            <!-- li>a? Add blink = <ul class="flexblock metrics blink">-->
+            <ul class="flexblock metrics border">
+              <li> Founded
+                <span>2024</span>
+              </li>
+              <li>
+                <span>
+                  <svg class="fa-users">
+                    <use xlink:href="#fa-users"></use>
+                  </svg>
+                </span>
+                24M Subscribers
+              </li>
+              <li>
+                <span>
+                  <svg class="fa-line-chart">
+                    <use xlink:href="#fa-line-chart"></use>
+                  </svg>
+                </span>
+                Revenue: $16M
+              </li>
+              <li>
+                Monthly Growth
+                <span>64%</span>
+              </li>
+              <li>
+                <span>
+                  <svg class="fa-building-o">
+                    <use xlink:href="#fa-building-o"></use>
+                  </svg>
+                </span>
+                8 Offices
+              </li>
+              <li>
+                <span>
+                  <svg class="fa-smile-o">
+                    <use xlink:href="#fa-smile-o"></use>
+                  </svg>
+                </span>
+                48 Employees
+              </li>
+              <li>
+                <span>
+                  <svg class="fa-usd">
+                    <use xlink:href="#fa-usd"></use>
+                  </svg>
+                </span>
+                EBITDA: $2,4M
+              </li>
+              <li>
+                <span>
+                  <svg class="fa-university">
+                    <use xlink:href="#fa-university"></use>
+                  </svg>
+                </span>
+                Bank: $32M
+              </li>
+            </ul>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="bg-white">
+          <!--.wrap.longform (width:72rem=720px) = Better reading experience (90-95 characters per line) -->
+          <div class="wrap longform">
+            <h2><strong>Discussion</strong></h2>
+            <p class="text-intro">The stories you tell, whether in text form, by way of video or through audio, are only as good as the information you gather.</p>
+            <p>Interviewing is the cornerstone of journalism. Interviews usually take place face to face and in person, although modern communications technologies such as the Internet have enabled conversations to happen in which parties are separated geographically, such as with videoconferencing software, and of course telephone interviews can happen without visual contact.</p>
+            <hr>
+            <dl class="text-interview">
+              <dt>David:</dt>
+              <dd>
+                <p><strong>Hi, this is a WebSlides Demo, where we interview the people who make us happy. I’m your host, David González. This week I interviewed lawyer Sheryl Hadid. Hi Sheryl!</strong></p>
+              </dd>
+              <dt>Sheryl:</dt>
+              <dd>
+                <p>Hi David!</p>
+              </dd>
+              <dt>David:</dt>
+              <dd>
+                <p><strong>Are interviews copyrighted? When does an interview become copyrightable?</strong></p>
+              </dd>
+              <dt>Sheryl:</dt>
+              <dd>
+                <p>The answer is it depends. Copyright of speech given during an interview relies heavily on the "fixation" element of copyright law. When a work is fixed in a copy or recording, the work is created. This gives the work its copyright. Therefore, when an interview is physically recorded it becomes copyrighted.</p>
+              </dd>
+              <dt>David:</dt>
+              <dd>
+                <p><strong>How could the person being interviewed own the copyright to an interview?</strong></p>
+              </dd>
+              <dt>Sheryl:</dt>
+              <dd>
+                <p>This may be a surprise but there are moments when the person being interviewed could in fact have copyright ownership in their words. For example, if the person being interviewed receives a list of questions from the interviewer and records their calculated responses, they could have copyright ownership in their answers because they not the interviewer actually wrote down or otherwise recorded their response.</p>
+              </dd>
+              <dd>
+                <blockquote class="text-quote">
+                  <p>People want to be smart. So, if you ask smart questions and show an interest in a particular subject they love sharing their insight.<code>.text-quote</code>.</p>
+                </blockquote>
+              </dd>
+              <dd>
+                <p>However, courts are hesitant to apply this concept broadly to spoken interviews because of the impact it could have on the First Amendment and the heavy caseload it would bring to an already overloaded court system. See Falwell v. Penthouse Intern., Ltd.  This also opens the door for other legal arguments such as fair use. Furthermore, there are times when contractual releases could affect the copyright and alter default copyright rules. </p>
+              </dd>
+            </dl>
+            <hr>
+            <div class="text-pull embed">
+              <iframe width="800" height="450" src="https://www.youtube.com/embed/7xYZ3rMT8_A?rel=0&amp;controls=0" allowfullscreen></iframe>
+            </div>
+            <!--.text-pull.embed (responsive video) -->
+            <hr>
+            <dl class="text-interview">
+              <dt>David:</dt>
+              <dd>
+                <p><strong>What are some methods to record an interview and what should the person being interviewed do?</strong></p>
+              </dd>
+              <dt>Sheryl:</dt>
+              <dd>
+                <p>Most often when problems with interview ownership arise it’s because persons being interviewed are unhappy with the way an interviewer uses their responses during interviews to mislead readers or viewers of a broadcast. This causes interviewees to claim their copyright was infringed because they claim to own the copyright to their speech during the interview.</p>
+              </dd>
+              <dt>David:</dt>
+              <dd>
+                <p><strong>When do problems with interview ownership arise, and who usually owns the copyright?</strong></p>
+              </dd>
+              <dt>Sheryl:</dt>
+              <dd>
+                <p>The most successful way to fix an interview is for interviewers to audio record or hand write the responses of the person being interviewed. If the interview is recorded by hand, it is helpful if the writing is legible and clearly communicates the conversation because it may help solve questions about fixation.  Short hand that only describes excerpts from the interview typically are not enough to constitute fixation and copyright ownership. So please remember, if there is no fixation of the interview then no copyright exists in that interview.</p>
+              </dd>
+              <dd>
+                <p>Further, if you are being interviewed please be aware that you do not possess ownership over your responses in most situations. It is always best to briefly think about your answer before you respond to avoid the misuse of your words by others.  And if you truly don’t feel comfortable being interviewed by a particular media source, remember you always have the power to say no to doing the interview.</p>
+              </dd>
+            </dl>
+          </div>
+        </section>
+        <section>
+          <!--.wrap = container width: 90% -->
+          <div class="wrap size-50 aligncenter">
+            <h3><strong>Things you can do with WebSlides</strong></h3>
+            <p class="text-intro"><a href="/demos/why-webslides" title="Why WebSlides?">Presentations</a>, <a href="/demos/landings" title="Landings">landings</a>, <a href="/demos/portfolios" title="Portfolios">portfolios</a>, and <a href="/demos/longforms" title="Longforms">longforms</a>.</p>
+            <div class="bg-white shadow">
+              <ul class="flexblock reasons">
+                <li>
+                  <h2>An opportunity to engage.</h2>
+                  <p><a href="https://webslides.tv" title="WebSlides">WebSlides</a> is about good karma. This is about telling the story, and sharing it in a beautiful way. HTML and CSS as narrative elements.</p>
+                </li>
+                <li>
+                  <h2>Work better, faster.</h2>
+                  <p>Designers, marketers, and journalists can now focus on the content. Simply <a href="https://webslides.tv/demos" title="WebSlides Demos">choose a demo</a> and customize it in minutes.</p>
+                </li>
+              </ul>
+            </div>
+            <!-- .end .bg-white shadow -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="bg-white">
+          <!--.wrap = container width: 90% -->
+          <div class="wrap longform">
+            <dl class="text-interview">
+              <dt>David:</dt>
+              <dd>
+                <p><strong>Is a web address (a domain name) subject to copyright law?</strong></p>
+              </dd>
+              <dt>Sheryl:</dt>
+              <dd>
+                <p>No, for a variety of reasons web addresses (also known as a domain names or URLs) aren't protected by copyright. Even though copyright doesn’t protect domain names, that doesn’t mean domain names are entirely unprotected. Trademark law protects web addresses. And for a variety of reasons, companies are often more apt to go after individual instances of trademark infringement than individual copyright infringers. </p>
+              </dd>
+              <dt>David:</dt>
+              <dd>
+                <p><strong>Are there easier alternatives than copyright?</strong></p>
+              </dd>
+              <dt>Sheryl:</dt>
+              <dd>
+                <p>Some persons and organizations hope to make the rules about using and reusing work more user-friendly. These groups may make their work freely available under <a href="https://creativecommons.org/">Creative Commons</a> licenses or expressly abandon them into the public domain. </p>
+              </dd>
+              <dd>
+                <p>But just because an author employs either of these copyright alternatives, that doesn’t mean that they are completely free of legal issues. For example, imagine you’re an advertising designer for Virgin Mobile, and you need a photo of a pretty teenage girl for your latest ad. You find a photo on Flickr that is free to use under a Creative Commons Attribution license. You use the photo in your ad campaign and plaster the photo on bus stops across Australia. This is exactly what happened, and since the photographer was adequately credited and copyright issues were non-existent everybody lived happily ever after, right?</p>
+              </dd>
+              <dd>
+                <p>If you have any questions about alternatives to the standard copyright scheme or how these alternatives are being utilized by thousands of artists every day, feel free to contact <a href="https://www.newmediarights.org/about_us/contact_us">New Media Rights</a>.</p>
+              </dd>
+            </dl>
+            <p><a href="http://www.newmediarights.org/are_interviews_copyrighted" target="_blank">"Are interviews copyrighted"</a> by NewMediaRights is licensed under CC BY NC 3.0.</p>
+            <hr>
+            <h3 class="aligncenter"><strong>Stories that stay with you</strong></h3>
+            <p class="aligncenter">Subscribe to our newsletter. All content is for demo purposes only.</p>
+            <form action="/" class="bg-light user" method="post">
+              <input type="email" name="email" tabindex="1" autocomplete="off" placeholder="your@email.com" required>
+              <button type="submit" tabindex="2" title="Subscribe">Subscribe &rsaquo;</button>
+            </form>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <!-- .wrap = container width: 90% -->
+          <div class="wrap aligncenter">
+            <h2><strong>Ready to start?</strong> </h2>
+            <p class="text-intro">Create your stories instantly.</p>
+            <p>
+              <a href="https://webslides.tv/webslides-latest.zip" class="button" title="Download WebSlides">
+                <svg class="fa-cloud-download">
+                  <use xlink:href="#fa-cloud-download"></use>
+                </svg>
+                Free Download
+              </a>
+              <span class="try">
+                <a href="https://www.paypal.me/jlantunez/8" title="Thanks :)">
+                  <svg class="fa-paypal">
+                    <use xlink:href="#fa-paypal"></use>
+                  </svg>
+                  Pay what you want.
+                </a>
+              </span>
+            </p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+      </article>
+    </main>
+    <!--main-->
+
+    <footer role="contentinfo">
+      <div class="wrap">
+        <div class="grid">
+          <div class="column">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <!-- .end .column -->
+          <div class="column">
+            <h3>Support</h3>
+            <ul>
+              <li><a href="#">Shipping &amp; Returns</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <!-- .end .column -->
+          <div class="column">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Cookies</a></li>
+            </ul>
+          </div>
+          <!-- .end .column -->
+          <div class="column">
+            <h3>Community</h3>
+            <ul>
+              <li>
+                <a href="#">
+                  <svg class="fa-facebook">
+                    <use xlink:href="#fa-facebook"></use>
+                  </svg>
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="fa-youtube">
+                    <use xlink:href="#fa-youtube"></use>
+                  </svg>
+                  YouTube
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="fa-twitter">
+                    <use xlink:href="#fa-twitter"></use>
+                  </svg>
+                  Twitter
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- .end .column -->
+        </div>
+        <!-- .end .grid -->
+      </div>
+      <!-- .end .wrap -->
+    </footer>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="../static/js/svg-icons.js"></script>
+
+  </body>
+</html>

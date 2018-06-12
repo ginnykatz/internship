@@ -1,0 +1,15 @@
+{
+"type": "FeatureCollection",
+"name": "events",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "event": "FEMAS ICS 300-800", "location": "Gleneden Beach Fire House", "latitude": 44.8759001, "longitude": -124.0342981, "date": null }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -124.0342981, 44.8759001 ] ] } },
+{ "type": "Feature", "properties": { "event": "County Emergency Fuel Mgmt Plan Development", "location": "4909 S Coast HwySouth Beach, OR 97366", "latitude": 44.5999569, "longitude": -124.0582954, "date": null }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -124.0582954, 44.5999569 ] ] } },
+{ "type": "Feature", "properties": { "event": "Mass Casualty Training", "location": "Marion County Public Works 5155 Silverton Rd NE, Salem, OR 97305", "latitude": 44.9745521, "longitude": -122.9550928, "date": null }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -122.9550928, 44.9745521 ] ] } },
+{ "type": "Feature", "properties": { "event": "Meeting with OEM", "location": "3225 State St # 115, Salem, OR 97301", "latitude": 44.928743, "longitude": -122.9962864, "date": null }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -122.9962864, 44.928743 ] ] } },
+{ "type": "Feature", "properties": { "event": "Navy Resource Drill ", "location": "Hatfield Marine Science Center", "latitude": 44.6213897, "longitude": -124.0441572, "date": null }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -124.0441572, 44.6213897 ] ] } },
+{ "type": "Feature", "properties": { "event": "Distant Tsunami Functional Exercise for Preparation of Eclipse Event", "location": "Lincoln County Sherrif's Office, Newport OR", "latitude": 44.6361951, "longitude": -124.0553843, "date": null }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -124.0553843, 44.6361951 ] ] } },
+{ "type": "Feature", "properties": { "event": "FEMA Flood Insurance", "location": "Oregon Coast Community College", "latitude": 44.6029039, "longitude": -124.0467834, "date": null }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -124.0467834, 44.6029039 ] ] } },
+{ "type": "Feature", "properties": { "event": "NOAA Portland Weather Forecast Office", "location": "5241 NE 122nd Ave, Portland, OR 97230", "latitude": 45.560795, "longitude": -122.538064, "date": null }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -122.538064, 45.560795 ] ] } }
+]
+}
