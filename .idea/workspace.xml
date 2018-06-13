@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe32330b-5cfc-4169-a874-94f7d66ad009" name="Default" comment="" />
+    <list default="true" id="fe32330b-5cfc-4169-a874-94f7d66ad009" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -37,11 +41,6 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main_bk.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/css/main_bk.css">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
           <file leaf-file-name="main_bk.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/main_bk.js">
               <provider selected="true" editor-type-id="text-editor">
@@ -73,14 +72,24 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="internship.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="internship.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/internship.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="17">
-                  <caret line="218" column="26" selection-start-line="218" selection-start-column="26" selection-end-line="218" selection-end-column="26" />
+                <state relative-caret-position="1129">
+                  <caret line="300" lean-forward="true" selection-start-line="300" selection-end-line="300" />
                   <folding>
                     <element signature="n#style#0;n#iframe#0;n#figure#0;n#div#0;n#div#0;n#section#1;n#article#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="e#29510#29518#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-803">
+                  <caret line="457" column="92" lean-forward="true" selection-start-line="457" selection-start-column="92" selection-end-line="457" selection-end-column="92" />
                 </state>
               </provider>
             </entry>
@@ -143,7 +152,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/media.html" />
         <option value="$PROJECT_DIR$/ginny.css" />
         <option value="$PROJECT_DIR$/static/css/ginny.css" />
@@ -155,6 +163,7 @@
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/internoa.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -188,55 +197,27 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="58" />
-    <option name="y" value="34" />
-    <option name="width" value="2012" />
-    <option name="height" value="1516" />
+    <option name="width" value="4530" />
+    <option name="height" value="3030" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="internship - 6.11" type="b2602c69:ProjectViewProjectNode" />
-              <item name="internship - 6.11" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="internship - 6.11" type="b2602c69:ProjectViewProjectNode" />
-              <item name="internship - 6.11" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="internship - 6.11" type="b2602c69:ProjectViewProjectNode" />
-              <item name="internship - 6.11" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="internship - 6.11" type="b2602c69:ProjectViewProjectNode" />
-              <item name="internship - 6.11" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="internship - 6.11" type="b2602c69:ProjectViewProjectNode" />
-              <item name="internship - 6.11" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="internship - 6.11" type="b2602c69:ProjectViewProjectNode" />
-              <item name="internship - 6.11" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="internship" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -299,6 +280,7 @@
       <workItem from="1528733041345" duration="32197000" />
       <workItem from="1528821056039" duration="10110000" />
       <workItem from="1528831727085" duration="668000" />
+      <workItem from="1528856138228" duration="1080000" />
     </task>
     <task id="LOCAL-00001" summary="add storymap html">
       <created>1525834877381</created>
@@ -311,7 +293,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121532000" />
+    <option name="totallyTimeSpent" value="122612000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="2263" height="1473" extended-state="6" />
@@ -321,12 +303,12 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3295964" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -339,19 +321,19 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.024010671" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" visible="true" weight="0.3295964" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -366,39 +348,29 @@
     <option name="LAST_COMMIT_MESSAGE" value="add storymap html" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/internoa.html">
+    <entry file="file://$PROJECT_DIR$/internship.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8007">
-          <caret line="471" column="37" selection-start-line="471" selection-start-column="37" selection-end-line="471" selection-end-column="37" />
+        <state relative-caret-position="3706">
+          <caret line="218" column="26" selection-start-line="218" selection-start-column="26" selection-end-line="218" selection-end-column="26" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#p#0;n#div#1;n#section#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#12856#12861#0" expanded="true" />
-            <element signature="n#style#0;n#h1#0;n#div#0;n#section#9;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#1;n#div#0;n#section#9;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#dt#0;n#dl#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#dt#1;n#dl#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#dt#2;n#dl#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#dt#3;n#dl#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#figure#0;n#div#0;n#div#0;n#section#1;n#article#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#29510#29518#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/internoa.html" />
     <entry file="file://$PROJECT_DIR$/indexg.html" />
     <entry file="file://$PROJECT_DIR$/media.html" />
     <entry file="file://$PROJECT_DIR$/videowork" />
-    <entry file="file://$PROJECT_DIR$/demos/interviews.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1176">
-          <caret line="56" column="49" selection-start-line="56" selection-start-column="49" selection-end-line="56" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/demos/interviews.html" />
     <entry file="file://$PROJECT_DIR$/internship.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4410">
           <caret line="210" column="28" lean-forward="true" selection-start-line="210" selection-start-column="28" selection-end-line="210" selection-end-column="28" />
           <folding>
             <element signature="n#style#0;n#iframe#0;n#figure#0;n#div#0;n#div#0;n#section#1;n#article#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#29510#29518#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -406,19 +378,14 @@
     <entry file="file://$PROJECT_DIR$/indexg.html" />
     <entry file="file://$PROJECT_DIR$/media.html" />
     <entry file="file://$PROJECT_DIR$/videowork" />
-    <entry file="file://$PROJECT_DIR$/demos/interviews.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1232">
-          <caret line="56" column="49" selection-start-line="56" selection-start-column="49" selection-end-line="56" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/demos/interviews.html" />
     <entry file="file://$PROJECT_DIR$/internship.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4620">
           <caret line="210" column="28" lean-forward="true" selection-start-line="210" selection-start-column="28" selection-end-line="210" selection-end-column="28" />
           <folding>
             <element signature="n#style#0;n#iframe#0;n#figure#0;n#div#0;n#div#0;n#section#1;n#article#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#29510#29518#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -426,19 +393,14 @@
     <entry file="file://$PROJECT_DIR$/indexg.html" />
     <entry file="file://$PROJECT_DIR$/media.html" />
     <entry file="file://$PROJECT_DIR$/videowork" />
-    <entry file="file://$PROJECT_DIR$/demos/interviews.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1232">
-          <caret line="56" column="49" selection-start-line="56" selection-start-column="49" selection-end-line="56" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/demos/interviews.html" />
     <entry file="file://$PROJECT_DIR$/internship.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4620">
           <caret line="210" column="28" lean-forward="true" selection-start-line="210" selection-start-column="28" selection-end-line="210" selection-end-column="28" />
           <folding>
             <element signature="n#style#0;n#iframe#0;n#figure#0;n#div#0;n#div#0;n#section#1;n#article#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#29510#29518#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -488,7 +450,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/indexg.html" />
     <entry file="file://$PROJECT_DIR$/index.html" />
-    <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/static/css/ginny.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -513,13 +474,7 @@
     <entry file="file://$PROJECT_DIR$/indexg.html" />
     <entry file="file://$PROJECT_DIR$/media.html" />
     <entry file="file://$PROJECT_DIR$/videowork" />
-    <entry file="file://$PROJECT_DIR$/demos/interviews.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/demos/interviews.html" />
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
@@ -547,9 +502,6 @@
           <caret line="151" column="1" selection-start-line="118" selection-start-column="1" selection-end-line="151" selection-end-column="1" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/main_bk.css">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/css/storymap.2.3.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -579,30 +531,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/internoa.html">
+    <entry file="file://$PROJECT_DIR$/internoa.html" />
+    <entry file="file://$PROJECT_DIR$/internship.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="471" column="37" selection-start-line="471" selection-start-column="37" selection-end-line="471" selection-end-column="37" />
+        <state relative-caret-position="1129">
+          <caret line="300" lean-forward="true" selection-start-line="300" selection-end-line="300" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#p#0;n#div#1;n#section#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#12856#12861#0" expanded="true" />
-            <element signature="n#style#0;n#h1#0;n#div#0;n#section#9;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#1;n#div#0;n#section#9;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#dt#0;n#dl#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#dt#1;n#dl#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#dt#2;n#dl#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#dt#3;n#dl#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#figure#0;n#div#0;n#div#0;n#section#1;n#article#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#29510#29518#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/internship.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="218" column="26" selection-start-line="218" selection-start-column="26" selection-end-line="218" selection-end-column="26" />
-          <folding>
-            <element signature="n#style#0;n#iframe#0;n#figure#0;n#div#0;n#div#0;n#section#1;n#article#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="-803">
+          <caret line="457" column="92" lean-forward="true" selection-start-line="457" selection-start-column="92" selection-end-line="457" selection-end-column="92" />
         </state>
       </provider>
     </entry>
